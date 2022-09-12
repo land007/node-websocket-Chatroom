@@ -7,6 +7,7 @@ module.exports={
     sourceMap:true
   },
   devServer:{
+    disableHostCheck: true,
     proxy: {
       '': {
         target: process.env.PROXY_SERVER,
